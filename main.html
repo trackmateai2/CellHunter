@@ -1,0 +1,411 @@
+<html>
+<head>
+	<title>Geo Loc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="assets.css">
+	<link rel="stylesheet" href="infoLay.css">
+	<script src="map.js"></script>
+	<script src="script.js"></script>
+   <style>
+	   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+	   @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+  </style>
+	  
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     
+</head>
+<body>
+
+
+
+
+               <p id="value1" class="coord">0.00000000</p>
+               <p id="value2" class="coord2">00.0000000</p>
+    
+     
+
+
+<div class="top">
+
+     <p class="tittle">Cellhunter</p>
+     <div class="loader">
+     <div class="point"></div>
+     </div>
+     
+      
+<div class="dropdown">
+  <svg class="dropbtn"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.29701 5.2338C3.52243 4.27279 4.27279 3.52243 5.2338 3.29701V3.29701C6.06663 3.10165 6.93337 3.10165 7.7662 3.29701V3.29701C8.72721 3.52243 9.47757 4.27279 9.70299 5.2338V5.2338C9.89835 6.06663 9.89835 6.93337 9.70299 7.7662V7.7662C9.47757 8.72721 8.72721 9.47757 7.7662 9.70299V9.70299C6.93337 9.89835 6.06663 9.89835 5.2338 9.70299V9.70299C4.27279 9.47757 3.52243 8.72721 3.29701 7.7662V7.7662C3.10166 6.93337 3.10166 6.06663 3.29701 5.2338V5.2338Z" stroke="#ffffff" stroke-width="1.5"></path> <path d="M3.29701 16.2338C3.52243 15.2728 4.27279 14.5224 5.2338 14.297V14.297C6.06663 14.1017 6.93337 14.1017 7.7662 14.297V14.297C8.72721 14.5224 9.47757 15.2728 9.70299 16.2338V16.2338C9.89835 17.0666 9.89835 17.9334 9.70299 18.7662V18.7662C9.47757 19.7272 8.72721 20.4776 7.7662 20.703V20.703C6.93337 20.8983 6.06663 20.8983 5.2338 20.703V20.703C4.27279 20.4776 3.52243 19.7272 3.29701 18.7662V18.7662C3.10166 17.9334 3.10166 17.0666 3.29701 16.2338V16.2338Z" stroke="#0095FF" stroke-width="1.5"></path> <path d="M14.297 5.2338C14.5224 4.27279 15.2728 3.52243 16.2338 3.29701V3.29701C17.0666 3.10165 17.9334 3.10165 18.7662 3.29701V3.29701C19.7272 3.52243 20.4776 4.27279 20.703 5.2338V5.2338C20.8983 6.06663 20.8983 6.93337 20.703 7.7662V7.7662C20.4776 8.72721 19.7272 9.47757 18.7662 9.70299V9.70299C17.9334 9.89835 17.0666 9.89835 16.2338 9.70299V9.70299C15.2728 9.47757 14.5224 8.72721 14.297 7.7662V7.7662C14.1017 6.93337 14.1017 6.06663 14.297 5.2338V5.2338Z" stroke="#ffffff" stroke-width="1.5"></path> <path d="M14.297 16.2338C14.5224 15.2728 15.2728 14.5224 16.2338 14.297V14.297C17.0666 14.1017 17.9334 14.1017 18.7662 14.297V14.297C19.7272 14.5224 20.4776 15.2728 20.703 16.2338V16.2338C20.8983 17.0666 20.8983 17.9334 20.703 18.7662V18.7662C20.4776 19.7272 19.7272 20.4776 18.7662 20.703V20.703C17.9334 20.8983 17.0666 20.8983 16.2338 20.703V20.703C15.2728 20.4776 14.5224 19.7272 14.297 18.7662V18.7662C14.1017 17.9334 14.1017 17.0666 14.297 16.2338V16.2338Z" stroke="#ffffff" stroke-width="1.5"></path> </g></svg>
+  <div class="dropdown-content">
+  <p class="optns" onClick="dashb()">Dashboard</p>
+  <p class="optns" onClick="startTrk()">Start Tracking</p>
+  <p class="optns" onClick="trkResults()">Tracking Results</p>
+  </div>
+</div>
+
+</div>
+
+   
+
+<div class="mapDiv" id="mapDiv">
+        <div id="demo" class="demoDiv" ></div>
+        <div id="map" class="map"></div>
+        
+     <script type="text/javascript">
+            var valu1= document.getElementById("value1").innerText;
+            var valu2= document.getElementById("value2").innerText;
+        
+            var map = L.map('map').setView([-22.4157720, 26.7348258], 4);
+        
+         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         maxZoom: 19,
+         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">TrackMate</a>'
+         }).addTo(map);
+     </script>
+</div>
+   
+   
+   
+   
+<div class="bottomNav">
+
+    <div id="btm">
+            <div class="line"></div>
+            
+            
+        <p class="product-title3"> <font color="#ffffff">OSINT intelligence Analysis <br/><font color="#ff0000"> Tool </font></p>
+    
+   
+        <div class="circles">
+           <div class="circle1"></div>
+           <div class="circle2"></div>
+           <div class="circle3"></div>
+        </div>
+   
+        <div class="menu">
+            <p class="title" id="myDevice">My Device</p>
+            <p class="ip" id="ip">123456789</p>
+            <p class="geo" id="country"> Country: loading...</p>
+            <p class="geo" id="Location"> Location: <font color="#E85C0D">Enable Location!</font></p>
+            <p class="geo" id="isp"> Connection Type: loading...</p>
+            <p class="geo" id="geoName"> ISP: loading...</p>
+            <p class="geo" id="call"> Calling Code: loading...</p>
+        </div>
+        <button class="refresh" onclick="refresh()">My Location</button>
+        
+        
+    </div><!--btm-->
+    
+    
+  <div class="btm2" id="btm2">
+            
+     <form class="form">
+            <div class="span"></div>
+       <p class="form-title">Input All Details</p>
+          <div class="input-container">
+            <input type="number" placeholder="Enter IMEi number" id="imeiField">
+            <span></span>
+           </div>
+         <div class="input-container">
+           <input type="text" placeholder="Last Known Location" id="locationField">
+         </div>
+       <button  class="submitt" onClick="locateDevice()">Start Tracking</button>
+
+       <p class="signup-link">
+         <a href="">privacy policy</a>
+       </p>
+     </form>
+
+ </div><!---btm2--->
+    
+    
+  <div class="btm2" id="btm3">
+            
+     <form class="form">
+            <div class="span"></div>
+            
+    
+<div class="card">
+    <div class="card-top">
+        <p class="product-title"> OSINT intelligence Analysis <br/><font color="#ff0000"> Report </font></p>
+    
+        <div class="rating">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <path d="M8.51948 1.625C9.1214 1.625 10.0427 4.16625 10.4636 5.43013C10.6014 5.8437 10.9837 6.13054 11.4192 6.14904C12.7373 6.20505 15.375 6.39722 15.375 7.0384C15.375 7.66696 13.5161 9.17543 12.5322 9.92976C12.1816 10.1986 12.0365 10.6604 12.1687 11.082C12.5631 12.34 13.2755 14.8755 12.7573 15.3009C12.2506 15.717 10.2147 14.2326 9.15246 13.4009C8.77021 13.1016 8.22949 13.1012 7.84719 13.4004C6.78473 14.2321 4.75246 15.717 4.28166 15.3009C3.79912 14.8745 4.47615 12.3275 4.84741 11.0727C4.97086 10.6555 4.82425 10.2029 4.47885 9.93826C3.49798 9.18681 1.625 7.66933 1.625 7.0384C1.625 6.3962 4.2711 6.20444 5.5871 6.14878C6.0197 6.13048 6.3998 5.84769 6.53973 5.43793C6.97041 4.17673 7.91633 1.625 8.51948 1.625Z" fill="#00B9AE" stroke="#00B9AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </div>
+    
+    
+<div class="topInfo">
+    
+    <div class="imgBtn">
+        <p class="rep">Tracking Report</p>
+        <p class="product-title2"> OSINT intelligence Analysis <br/><font color="#ff0000"> Report </font></p>
+    
+    
+       <div class="imageLay" id="imageLay">
+         <image class="phoneImage" id="phoneImage" src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a20.jpg"></image>
+       </div>
+       
+       <div class="card__btns">
+        <button class="watch-btn">Refresh Intel</button>
+       </div>
+   </div>
+    
+    
+    <div class="right-info">
+      <ul class="features-list">
+        <li class="list-item">
+          <p class="feature-sub-title">IMEi Number</p>
+          <span class="feature-desc" id="imeiCont">Awaiting Query...</span>
+        </li>
+        <li class="list-item">
+          <p class="feature-sub-title">Device</p>
+          <span class="feature-desc" id="modelCont">Awaiting Query...</span>
+        </li>
+        <li class="list-item">
+          <p class="feature-sub-title">Location</p>
+          <span class="feature-desc" id="locaCont"><b>Hidden(<font color="#ff0000">Payment Required</font>)</b></span>
+        </li>
+        
+<p class="intel" id="intelCont">
+                    
+              
+Phone Number: +267 7*******<br/>
+Name: *******   <br/>
+Surname: *******  <br/>
+Gender: *******  <br/>
+Title: Mr <br/>
+DateOfBirth: ****/**/**/  <br/>
+PlaceOfBirth: <br/>
+ID Type: ID Card <br/>
+ExpiryDate: <br/>
+ResidentialAddress: **** Ward <br/>
+PostalAddress: Box *** *** <br/>
+City/Village: ****** 
+
+
+ </p>
+    
+    
+    </div>
+    
+    
+    
+</div>
+    
+    
+    
+    
+    
+    <div class="card__btns">
+        <button class="add-btn">+</button>
+        <button class="watch-btn2">Unlock Intel</button>
+    </div>
+</div>
+       
+     </form>
+
+ </div><!---btm3--->
+    
+</div>
+   
+   
+   
+   	
+	<script>
+        window.onload = function() {
+            const textValue = localStorage.getItem('textValue');
+            //document.getElementById('myDevice').textContent = textValue;
+        };
+    </script>
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
+      }
+    
+
+    function showPosition(position) {
+        
+        document.getElementById("value1").innerHTML =position.coords.latitude;
+        document.getElementById("value2").innerHTML =position.coords.longitude;
+        
+        cod=document.getElementById("value1").innerHTML;
+        cod2=document.getElementById("value2").innerHTML;
+        //alert(cod+","+cod2);
+        
+         //var marker = L.marker([cod, cod2]).addTo(map);
+         //marker.bindPopup("<font color=#000000><b>My Location </b> <br/> <font size=0.5px color=grey>  Accuracy 97%... ").openPopup();
+     
+         Location=document.getElementById("Location").innerHTML="Location: "+cod+","+cod2;
+    }
+
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          document.getElementById("location").innerHTML = "User denied the request for Geolocation.";
+          break;
+        case error.POSITION_UNAVAILABLE:
+          document.getElementById("location").innerHTML = "Location information is unavailable.";
+          break;
+        case error.TIMEOUT:
+          document.getElementById("location").innerHTML = "The request to get user location timed out.";
+          break;
+        case error.UNKNOWN_ERROR:
+          document.getElementById("location").innerHTML = "An unknown error occurred.";
+          break;
+      }
+    }
+  </script>
+<script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').textContent = "IP Address: "+data.ip;
+            })
+            .catch(error => {
+                console.error('Error fetching the IP address:', error);
+            });
+            
+            
+           document.addEventListener('DOMContentLoaded', function() {
+      // Replace 'YOUR_API_KEY' with your actual IPGeolocation.io API key
+      var apiKey = 'bee0da68402b4be28ec8becfa4685317';
+
+      // Fetch the device's IP address from an IP detection service
+      fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          var ipAddress = data.ip;
+
+          // Create a new XMLHttpRequest object
+          var xhr = new XMLHttpRequest();
+
+          // Define the API endpoint URL
+          var url = 'https://api.ipgeolocation.io/ipgeo?apiKey=' + apiKey + '&ip=' + ipAddress;
+
+          // Prepare the request
+          xhr.open('GET', url, true);
+
+          // Handle the response
+          xhr.onload = function() {
+            if (xhr.status === 200) {
+              var response = JSON.parse(xhr.responseText);
+
+              // Display the response
+              document.getElementById('ip').textContent = response.ip;
+              document.getElementById('country').textContent = "Country: "+response.country_name;
+              document.getElementById('isp').textContent = "ISP: "+response.isp;
+              document.getElementById('geoName').textContent ="Geo NAme: "+ response.geoname_id;
+              document.getElementById('call').textContent = "Calling Code: "+response.calling_code;
+              
+              
+              var ipElement = document.getElementById('ip');
+              ipElement.textContent = "IP Address: "+ response.ip;
+              ipElement.style.color = 'red';
+              
+            }
+          };
+
+          // Send the request
+          xhr.send();
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+    
+
+    function locateDevice(){
+        
+        var subject = document.getElementById("imeiField").value;
+        var body = document.getElementById("locationField").value;
+        const userr = localStorage.getItem('textValue');
+        
+        const secretKey = '$2b$10$5.GD5IWqNSL2RsbiNWZdbeQGJ3wkUk/t3ZxfbbLn2ddvAPibpWpr.';
+        const binName= 'myBin';
+
+
+
+      
+        const data = {
+        IMEi: subject,
+        LastLocation: body,
+        user: userr
+      };
+
+      
+       fetch('https://api.jsonbin.io/v3/b', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              "X-Master-Key": secretKey,
+              "X-Bin-Private": true,
+              'X-Bin-Name': userr
+            },
+            body: JSON.stringify(data)
+          })
+         .then(response => response.json())
+         .then(jsonData => console.log(jsonData))
+         .catch(error => console.error(error));
+      
+
+
+
+
+            alert("Recieved,processing may take up to an hour.Keep on checking Tracking Results");
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
