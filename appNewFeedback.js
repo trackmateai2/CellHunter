@@ -79,6 +79,9 @@ if (username=="tumisangd@temp.com"){
 
 
 
+if (username=="evansbuca@temp.com"){
+           window.location.href=("Results/resultsEvansbuca.html");
+   }
 if (username=="phexmore@gmail.com"){
            window.location.href=("Results/resultsPhex.html");
    }
