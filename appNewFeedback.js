@@ -49,6 +49,13 @@ if (username=="tumisangd@temp.com"){
             model.innerHTML=("APPLE iPhone 11 Pro(A2217)");
             phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11-pro-max-.jpg";
    }
+if (username=="76935569@Cellhunter.com"){
+            phoneImageLay.style.display=("block");
+            
+            imei.innerHTML=("353475129709538");
+            model.innerHTML=("SAMSUNG Galaxy A33 5G(SM-A336E)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a33-5g.jpg";
+   }
 
 
 
