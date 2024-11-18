@@ -17,7 +17,10 @@ function signUpFirebase(){
 
       firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function(user) {
-          
+
+          loadder=document.getElementById("loadder");
+          loadder.style.display=("block");
+            
           alert("Sign up successful!");
           window.location.href=("login.html");
           
