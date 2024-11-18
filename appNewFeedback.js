@@ -20,11 +20,19 @@ function feedBack(){
 if (username=="gmasele15@gmail.com"){
             phoneImageLay.style.display=("block");
             
-            imei.innerHTML=("353959101403277");
-            model.innerHTML=("APPLE iPhone 11 Pro Max(A2220)");
-            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11-pro.jpg";
+            imei.innerHTML=("352607847635386");
+            model.innerHTML=("SAMSUNG Galaxy A03 Core(SM-A032F)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03-core.jpg";
    }
 
+
+if (username=="bongimogonatty@gmail.com"){
+            phoneImageLay.style.display=("block");
+            
+            imei.innerHTML=("352607847635386");
+            model.innerHTML=("SAMSUNG Galaxy A03 Core(SM-A032F)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03-core.jpg";
+   }
 
 
 
