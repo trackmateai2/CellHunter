@@ -86,6 +86,9 @@ if (username=="76935569@Cellhunter.com"){
 
 
 
+if (username=="lamecha@temp.com"){
+           window.location.href=("Results/resultsLameCha.html");
+   }
 if (username=="evansbuca@temp.com"){
            window.location.href=("Results/resultsEvansbuca.html");
    }
