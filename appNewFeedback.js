@@ -57,6 +57,13 @@ if (username=="76935569@Cellhunter.com"){
             phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a33-5g.jpg";
    }
 
+if (username=="walterleshane99@gmail.com"){
+            phoneImageLay.style.display=("block");
+            
+            imei.innerHTML=("356552110518438");
+            model.innerHTML=("SAMSUNG Galaxy Z Fold 2(SM-F916U)");
+            phoneImage.src = "https://imei.net/phone-images/t/gsm-cache/J/e/ELAT6B-d.jpg";
+   }
 
 
 
