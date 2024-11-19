@@ -17,12 +17,12 @@ function feedBack(){
 
 
 
-if (username=="gmasele15@gmail.com"){
+if (username=="maxmoilwa@gmail.com"){
             phoneImageLay.style.display=("block");
             
-            imei.innerHTML=("352607847635386");
-            model.innerHTML=("SAMSUNG Galaxy A03 Core(SM-A032F)");
-            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03-core.jpg";
+            imei.innerHTML=("355506802633831");
+            model.innerHTML=("SAMSUNG Galaxy A24(SM-A245F)");
+            phoneImage.src = "https://imei.net/phone-images/t/gsm-cache/k/O/MCpIfl-d.jpg";
    }
 
 
