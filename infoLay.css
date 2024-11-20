@@ -71,20 +71,21 @@
   transform: scale(0.9);
 }
 
-.card .add-btn {
+
+
+.add-btn {
   color: #fff;
   padding: 0.7em 0.8em;
   background: rgba(249, 249, 249, 0.2);
   border-radius: 14px;
 }
 
-.card .watch-btn2 {
+.watch-btn22 {
   flex: 1;
-  border: none;
-  background: none;
-  background: var(--primary);
+  border: 1px solid #ff0000;
+  background: transparent;
   color: #fff;
-  border-radius: var(--radius);
+  border-radius: 15px;
   padding: 0.5rem 1rem;
   font-size: 0.7rem;
   transition: 0.2s;
