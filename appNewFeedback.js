@@ -108,7 +108,7 @@ if (username=="gmasele15@gmail.com"){
 
 
          
-if (username=="Walterleshane999@gmail.com"){
+if (username=="Walterleshane99@gmail.com"){
            window.location.href=("Results/resultsWalter.html");
    }
 
