@@ -65,7 +65,21 @@ if (username=="walterleshane99@gmail.com"){
             phoneImage.src = "https://imei.net/phone-images/t/gsm-cache/J/e/ELAT6B-d.jpg";
    }
 
+if (username=="plaatjietumo3@gmail.com"){
+            phoneImageLay.style.display=("block");
+            
+            imei.innerHTML=("356449106613523");
+            model.innerHTML=("APPLE iPhone Xr(A1984)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg";
+   }
 
+if (username=="gmasele15@gmail.com"){
+            phoneImageLay.style.display=("block");
+            
+            imei.innerHTML=("356449106613523");
+            model.innerHTML=("APPLE iPhone Xr(A1984)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg";
+   }
 
 
 
