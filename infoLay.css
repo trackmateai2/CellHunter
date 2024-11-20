@@ -67,9 +67,10 @@
 
 
 
-.card__btns {
+.card__btnss {
   /*display: flex;
     gap: 0.6rem;*/
+    margin-top: -10%;
 }
 .add-btn {
   color: #fff;
