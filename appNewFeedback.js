@@ -17,12 +17,12 @@ function feedBack(){
 
 
 
-if (username=="dibeelakate2@gmail.com"){
+if (username=="baithuwio@gmail.com"){
             phoneImageLay.style.display=("block");
             
-            imei.innerHTML=("355241383447316");
-            model.innerHTML=("APPLE iPhone 14(A2649)");
-            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg";
+            imei.innerHTML=("860650063356449");
+            model.innerHTML=("XIAOMI 11T Pro(2201116TG)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10-pro.jpg";
    }
 
 
