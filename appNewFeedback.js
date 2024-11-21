@@ -17,12 +17,12 @@ function feedBack(){
 
 
 
-if (username=="maxmoilwa@gmail.com"){
+if (username=="dibeelakate2@gmail.com"){
             phoneImageLay.style.display=("block");
             
-            imei.innerHTML=("355506802633831");
-            model.innerHTML=("SAMSUNG Galaxy A24(SM-A245F)");
-            phoneImage.src = "https://imei.net/phone-images/t/gsm-cache/k/O/MCpIfl-d.jpg";
+            imei.innerHTML=("355241383447316");
+            model.innerHTML=("APPLE iPhone 14(A2649)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg";
    }
 
 
