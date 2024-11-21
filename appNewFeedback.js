@@ -73,12 +73,12 @@ if (username=="plaatjietumo3@gmail.com"){
             phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg";
    }
 
-if (username=="gmasele15@gmail.com"){
+if (username=="baithuwio@gmail.com"){
             phoneImageLay.style.display=("block");
             
-            imei.innerHTML=("356449106613523");
-            model.innerHTML=("APPLE iPhone Xr(A1984)");
-            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg";
+            imei.innerHTML=("860650063356449");
+            model.innerHTML=("XIAOMI 11T Pro(2201116TG)");
+            phoneImage.src = "https://imei.net/phone-images/t/gsm-cache/j/2/hJF5iC-d.jpg";
    }
 
 
