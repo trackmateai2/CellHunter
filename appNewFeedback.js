@@ -106,6 +106,9 @@ if (username=="baithuwio@gmail.com"){
 
 
 
+if (username=="73799377@temp.com"){
+           window.location.href=("Results/results73799.html");
+   }     
 
 if (username=="walter@temp.com"){
            window.location.href=("Results/resultsWalter.html");
