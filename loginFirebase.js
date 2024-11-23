@@ -52,8 +52,8 @@ function signInFirebase(){
       firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function(user) {
             
-            
-            window.location.href=("main.html");
+            alert("Client Version app under maintainance");
+            //window.location.href=("main.html");
             const inputValue = document.getElementById('email').value;
             localStorage.setItem('textValue', inputValue);
           
