@@ -105,7 +105,7 @@ if (username=="baithuwio@gmail.com"){
 
 
 
-if (username=="74082070@temp.com"){
+if (username=="74082070@cellhunter.com"){
            window.location.href=("Results/results74082.html");
    }     
 
