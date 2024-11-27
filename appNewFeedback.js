@@ -34,12 +34,12 @@ if (username=="bongimogonatty@gmail.com"){
             phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03-core.jpg";
    }
 
-if (username=="tshepangpholele@gmail.com"){
+if (username=="71727562@cellhunter.com"){
             phoneImageLay.style.display=("block");
             
-            imei.innerHTML=("356691614212666");
-            model.innerHTML=("TECNO Pop 5");
-            phoneImage.src = "https://imei.net/phone-images/t/gsm-cache/w/6/wVTqI5-d.jpg";
+            imei.innerHTML=("353818080453200");
+            model.innerHTML=("APPLE iPhone 7 Plus(A1661)");
+            phoneImage.src = "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-7-plus-r2.jpg";
    }
 
 if (username=="tumisangd@temp.com"){
